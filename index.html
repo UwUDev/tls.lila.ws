@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pingled</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+</head>
+<body>
+<div class="background-pattern"></div>
+
+<div class="container">
+    <header class="header">
+        <div class="header-icon">🔐</div>
+        <h1>Pingled</h1>
+        <p>TLS & HTTP Analysis Tool for Debugging and Copying HTTP clients behavior</p>
+        <div class="button-group">
+            <button class="refresh-btn" onclick="fetchDebugInfo()">
+                <span class="btn-icon">🔄</span>
+                Refresh Analysis
+            </button>
+            <button class="import-btn" onclick="importFromClipboard()">
+                <span class="btn-icon">📋</span>
+                Import from Clipboard
+            </button>
+        </div>
+    </header>
+
+    <main id="content">
+    </main>
+
+    <footer class="footer">
+        <p>Powered by <strong><a href="https://github.com/0x676e67/pingly" class="url"
+                                 target="_blank">pingly</a></strong></p>
+    </footer>
+</div>
+
+<script src="home.js"></script>
+</body>
+</html>
